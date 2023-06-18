@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "dark light them",
+    "description": "Enable dark light them",
+    "version": "1.0",
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
