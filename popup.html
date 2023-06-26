@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./popup.css">
     <title>Pop up</title>
 </head>
+
 <body>
-    <h3>Chose one:</h3>
-   <div>
-    <button  id="dark-btn">Dark</button>
-    <button id="light-btn">Light</button>
-   </div>
+    <!-- <h3>Chose one:</h3>
+    <div>
+        <button id="dark-btn">Dark</button>
+        <button id="light-btn">Light</button>
+    </div> -->
+    <!-- <img src="./images/currency-icons/eru.png" alt=""></span>  -->
+    <div id="currency-container">
+        <h3>Convert Your Currency:</h3>
+
+        <input type="number" id="amount" required>
+       
+        <div class="currency-select">
+            <span>From</span>
+            <select name=""  id="old_currency">
+                <option value="EUR">
+                    EUR
+                </option>
+                <option value="CAD">CAD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="BDT">BDT</option>
+            </select>
+
+
+            <span>To</span>
+            <select name="" id="currency">
+                <option value="EUR">EUR</option>
+                <option value="CAD">CAD</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="BDT">BDT</option>
+            </select>
+
+
+        </div>
+
+        <button id="convert-btn">Covert</button>
+
+        <div id="result"></div>
+        <br>
+    </div>
 
 
     <script src="./popup.js"></script>
 </body>
+
 </html>
